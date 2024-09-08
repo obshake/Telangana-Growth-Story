@@ -147,7 +147,8 @@ GROUP BY
 HAVING 
     SUM(documents_registered_rev) < SUM(estamps_challans_rev)
 ORDER BY 
-    estamps_rev DESC;
+    estamps_rev DESC
+LIMIT 5;
 ```
 **3. Is there any alteration of e-Stamp challan count and document registration count pattern since the implementation of e-Stamp challan? If so, what suggestions would you propose to the government?**
 ```sql
@@ -374,7 +375,7 @@ GROUP BY
     district
 ORDER BY 
     total_investment DESC
-LIMIT 5;
+LIMIT 3;
 ```
 **10. Is there any relationship between sector investments, vehicles sales and stamps revenue in the same district between FY 2021 and 2022.**
 ```sql
